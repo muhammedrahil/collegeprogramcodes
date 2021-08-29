@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function triangle() {
+            var side1 = document.getElementById("side1").value;
+            side1 = parseInt(side1);
+            var side2 = document.getElementById("side2").value;
+            side2 = parseInt(side2);
+            var side3 = document.getElementById("side3").value;
+            side3 = parseInt(side3);
+            
+            if (side1+side2<side3 || side1+side3<side2 || side2+side3<side1){
+                alert("cant form  triangle");
+            }
+            else if (side1 == side2 && side2 == side3) {
+                alert("equalateral triangle");
+            }
+        else if (side1 == side2 || side1 == side3 || side2 == side3) {
+                alert("isoceles triangle");
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <label for="">enter trangle sides</label><br>
+    <input type="text" placeholder="1st side" id="side1"><br><br>
+    <input type="text" placeholder="2st side" id="side2"><br><br>
+    <input type="text" placeholder="3st side" id="side3"><br><br>
+    <button onclick="triangle()">show the trangle type</button>
+</form>
+</body>
+
+</html>

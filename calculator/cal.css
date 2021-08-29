@@ -1,0 +1,24 @@
+.screen{
+    width: 400px; 
+    height: 500px;
+    background-color: gray;
+    margin-left: 30%;
+}
+.lalu{
+    margin-left: 6%;
+    margin-top: 27px;
+    height: 54px;
+    width: 344px;
+}
+
+.pop{
+    margin-left: 9%;
+    margin-top: 34px;
+    height: 40px;
+    width: 46px;
+
+    
+}
+button:hover{
+    background-color:gold ;
+}

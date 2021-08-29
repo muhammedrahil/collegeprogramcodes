@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area,cercomfernce</title>
+    <script >
+        function area_circumfrence()
+        {
+            var takeradius = document.form1.lalu.value;       
+            var area = ( takeradius * takeradius *Math.PI);
+            var circumfrence = (2* takeradius *Math.PI);
+            document.writeln("<p>area is"+area+"</p>");
+            document.writeln("<p>cercumfernce is "+circumfrence+"</p>");
+        }
+    </script>
+</head>
+<body>
+   <form name="form1" >
+       <input type="text" name="lalu" placeholder="enter the no">
+       <input type="button" value="show answer" onclick="area_circumfrence();">                 
+   </form> 
+</body>
+</html>

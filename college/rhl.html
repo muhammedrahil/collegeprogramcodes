@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function factors(){
+var number = document.getElementById("number").value;
+var sum=0;
+for(var i=0;i<number;i++){
+if(number%i===0){
+  sum+=i;
+    } 
+  }
+  if(sum>number){
+    alert(number+" is Abundant");
+  }
+  else if(sum<number){
+    alert(number+" is Deficient");
+  }
+  
+  else{
+  alert(number+" is Perfect");
+  }
+}
+</script>
+</head>
+<body>
+enter the number : <input type="text" id="number">
+<button onclick="factors()">submit</button>
+</body>
+</html>
